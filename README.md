@@ -18,10 +18,12 @@ Return Analysis: Understand return patterns across different markets and segment
 The dashboard integrates data from three tables:
 
 Orders: Contains detailed order information, including sales, profit, quantity, category, and market data.
+
 People: Contains information about individuals and their assigned regions.
+
 Return: Tracks returned orders along with the corresponding markets.
 
-KPI Metrics
+## KPI Metrics
 A dynamic KPI table was created to streamline the dashboard’s metrics:
 
 | **Name**             | **Metric**               | **Symbol** |
@@ -70,5 +72,5 @@ Test and Iterate:
 Test the dashboard for functionality and usability.
 Gather feedback from users and iterate to improve user experience and insights.
 
-##Conclusion
+## Conclusion
 This dynamic retail dashboard offers a comprehensive solution for analyzing retail data, providing valuable insights into sales, profitability, and customer behavior. By focusing on the key metrics and offering a user-friendly interface, the dashboard is an effective tool for retail managers to make data-driven decisions. Future enhancements like return analysis and market analysis will further strengthen its capabilities, making it an indispensable asset for retail businesses.
