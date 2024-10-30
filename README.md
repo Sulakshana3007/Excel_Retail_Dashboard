@@ -1,65 +1,119 @@
-Dynamic Retail Dashboard in Excel
-
+Dynamic Retail Dashboard
 
 Objective
-The Dynamic Retail Dashboard is a comprehensive Excel-based tool designed to analyze retail data through interactive KPIs and visualizations. It allows users to gain insights into key performance indicators (KPIs) including sales performance, profitability, product trends, and return analysis. The dashboard empowers retail managers and stakeholders to make data-driven decisions with an intuitive and interactive layout.
+The primary goal of this project is to develop a comprehensive and dynamic dashboard for analyzing retail data. By leveraging various KPIs and visualizations, the dashboard aims to provide insights into sales performance, profitability, product trends, and return analysis. This project is designed to facilitate better decision-making for retail managers and stakeholders by presenting key metrics in an intuitive and interactive way.
 
-Key Features and Significance
-Retail success hinges on accurate data insights. This dynamic dashboard enables:
+Significance
+Retail businesses thrive on accurate data analysis and insights. The dynamic retail dashboard serves as a powerful tool for:
 
-KPI Tracking: Monitor metrics like total sales, total profit, order count,avg discount and profit margin.
-Sales Trend Analysis: Analyze trends over time, discover top-performing regions, and assess segment effectiveness.
-Product Performance: Review which product categories and subcategories drive the most sales and profitability.
-Customer Insights: Identify top and bottom customers to fine-tune strategies and improve engagement.
-Return Analysis: Track return patterns across different markets and segments to address potential issues.
+Tracking KPIs: Monitor crucial metrics like total sales, total profit, order count, and profit margin.
+Understanding Sales Trends: Analyze sales trends over time, identify top-performing regions, and assess the effectiveness of different segments.
+Product Analysis: Evaluate which product categories and subcategories drive the most sales and profit.
+Customer Analysis: Identify top and bottom customers to tailor strategies and optimize engagement.
+Return Analysis: Understand return patterns across different markets and segments.
 Data Sources
-The dashboard aggregates information from three main datasets:
+The dashboard integrates data from three tables:
 
-Orders: Contains details like sales, profit, quantity, category, and market information.
-People: Holds data on individuals and their assigned regions.
-Return: Tracks returned orders with associated markets.
+Orders: Contains detailed order information, including sales, profit, quantity, category, and market data.
+People: Contains information about individuals and their assigned regions.
+Return: Tracks returned orders along with the corresponding markets.
+Sample Data
+Orders Table:
+
+Order ID	Order Date	Ship Date	Ship Mode	Customer ID	Customer Name	Segment	Country	Market	Sales	Quantity	Discount	Profit	Order Priority
+CA-2012-124891	31-07-2020	31-07-2020	Same Day	RH-19495	Rick Hansen	Consumer	United States	US	2309.65	7	0	762.18	Critical
+People Table:
+
+Person	Region
+Anna Andreadi	Central
+Chuck Magee	South
+Return Table:
+
+Returned	Order ID	Market
+Yes	MX-2013-168137	LATAM
 Problem Statements Addressed
-The dashboard addresses several retail challenges:
+The dashboard solves the following problem statements:
 
-KPI Calculation: Calculates total sales, profit, quantity, order count, and profit margin.
-Sales & Profit Analysis: Shows detailed views of sales and profit by region, market, and segment.
-Category Profitability: Visualizes profit contributions by product categories.
-Segment Sales: Highlights sales shares across customer segments.
-Sales Distribution by Country: Presents sales distribution via country-level analysis.
-Top & Bottom Product Subcategories: Identifies the top and bottom-performing product subcategories.
-Yearly Sales Trend: Tracks sales over time to spot seasonal patterns.
+KPI Calculation: Calculates total sales, total profit, total quantity, number of orders, and profit margin.
+image
+
+Sales and Profit Analysis: Provides a detailed analysis of sales and profit across different regions, markets, and segments.
+image
+
+Category-wise Profit: Displays profit contribution by different product categories.
+image
+
+Segment-wise Sales Share: Shows the share of sales across different customer segments.
+image
+
+Sales by Country: Highlights sales distribution by country. image
+
+Top 5 Subcategories: Identifies subcategories with the highest sales.
+
+image
+
+Bottom 5 Subcategories: Highlights subcategories with lower sales.
+image
+
+Yearly Sales Trend: Visualizes sales trends over time to identify seasonal patterns.
+image
+
 Next Steps
-Planned future enhancements include:
+The future enhancements for this project include:
 
-Return Analysis: Understand reasons for returns and analyze trends by market.
-Customer Analysis: Identify top and bottom customers to refine engagement strategies.
-Segment Analysis: Delve deeper into customer segments for tailored marketing.
-Market Analysis: Compare sales and returns across regions to improve performance.
-Product Analysis: Examine product-level metrics for better inventory and pricing decisions.
+Return Analysis: Explore the reasons behind returns and analyze trends across markets.
+Top and Bottom Customer Analysis: Identify key customers and those requiring engagement strategies.
+Segment Analysis: Deep dive into customer segments to tailor marketing and sales strategies.
+Market Analysis: Compare sales and returns across different markets to optimize regional performance.
+Product Analysis: Examine product-level performance to optimize inventory and pricing strategies.
 KPI Metrics
-A dynamic KPI table was created to streamline the display of key metrics:
+A dynamic KPI table was created to streamline the dashboard’s metrics:
 
 Name	Metric	Symbol
 Total Sales	Sum of Sales	💰
 Total Profit	Sum of Profit	📈
 Total Quantity	Sum of Quantity	📦
 No of Orders	Count of Order ID	🛒
-Profit Margin	Sum of Profitability	💹
-Avg Discount	Average of Discount	🔍
+Profitability	Sum of Profitability	💹
+Average Discount	Average of Discount	🔍
 
-Development Steps
-Set Up Environment: Use Excel (or optionally, tools like Tableau or Power BI) to host the dashboard.
-Data Preparation: Clean and join the Orders, People, and Return tables using Order ID where necessary.
-KPI Calculation: Calculate essential metrics like total sales, profit, and order counts for KPI tables.
-Visualizations: Design interactive bar charts, line charts, pie charts, and geo maps for each metric.
-Return Analysis: Identify trends and insights related to returns.
-Deployment: Publish the dashboard in Excel or share via link if using a web-based tool.
-Testing & Feedback: Test for functionality and usability, then gather feedback for improvements.
+Steps to Create the Dashboard
+Set Up Your Environment:
+
+Choose a data analysis and visualization tool such as Tableau, Power BI, or Python with Plotly/Dash.
+Prepare your development environment by installing necessary libraries or software.
+Load the Orders, People, and Return datasets into your environment.
+Data Cleaning and Preparation:
+
+Ensure that each dataset is cleaned for null values, duplicates, and formatting inconsistencies.
+Join the three tables as needed, such as using Order ID to match returns data with orders.
+Create derived fields like Total Profit, Profit Margin, and Sales Contribution.
+KPI Calculation:
+
+Calculate Total Sales, Total Profit, Total Quantity, Number of Orders, and Average Discount.
+Summarize these metrics in a KPI table to be used in the dashboard.
+Data Visualization:
+
+Create various charts and graphs:
+Bar Charts for top and bottom subcategories.
+Line Charts for visualizing the Yearly Sales Trend.
+Pie Charts for Segment-wise Sales Share.
+Geo Maps for Sales by Country.
+Use filtering options to allow users to filter data by region, market, and customer segment.
+Return Analysis:
+
+Visualize the number of returns across different markets and product categories.
+Provide insights into patterns and potential issues causing returns.
+Deploy the Dashboard:
+
+Publish the dashboard to a web server (if using a tool like Tableau or Power BI) or deploy it using Python (e.g., Dash app on a cloud service).
+Share access with stakeholders by providing a link or embedding the dashboard on a web page.
+Test and Iterate:
+
+Test the dashboard for functionality and usability.
+Gather feedback from users and iterate to improve user experience and insights.
 
 Conclusion
-This retail dashboard offers a robust solution for analyzing sales, profitability, and customer behavior. With future enhancements, such as market and return analysis, the dashboard aims to be an essential tool for retail businesses looking to make informed, data-driven decisions.
+This dynamic retail dashboard offers a comprehensive solution for analyzing retail data, providing valuable insights into sales, profitability, and customer behavior. By focusing on the key metrics and offering a user-friendly interface, the dashboard is an effective tool for retail managers to make data-driven decisions. Future enhancements like return analysis and market analysis will further strengthen its capabilities, making it an indispensable asset for retail businesses.
 
-![WhatsApp Image 2024-10-30 at 14 19 52_5a607fe0](https://github.com/user-attachments/assets/1aa93d40-0c7d-4253-ae04-6daa46c53e1c)
-
-
-
+![WhatsApp Image 2024-10-30 at 14 19 52_6570874e](https://github.com/user-attachments/assets/00836472-9bc7-4cc2-b423-f7b5e4bbb313)
