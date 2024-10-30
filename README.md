@@ -35,42 +35,49 @@ A dynamic KPI table was created to streamline the dashboard’s metrics:
 | Profitability        | Sum of Profitability     | 💹        |
 | Average Discount     | Average of Discount      | 🔍        |
 
+
+
 ## Steps to Create the Dashboard
-Set Up Your Environment:
 
-Choose a data analysis and visualization tool such as Tableau, Power BI, or Python with Plotly/Dash.
-Prepare your development environment by installing necessary libraries or software.
-Load the Orders, People, and Return datasets into your environment.
-Data Cleaning and Preparation:
+1. **Set Up Your Environment**
+   - Choose a data analysis and visualization tool such as Tableau, Power BI, or Python with Plotly/Dash.
+   - Prepare your development environment by installing necessary libraries or software.
+   - Load the Orders, People, and Return datasets into your environment.
 
-Ensure that each dataset is cleaned for null values, duplicates, and formatting inconsistencies.
-Join the three tables as needed, such as using Order ID to match returns data with orders.
-Create derived fields like Total Profit, Profit Margin, and Sales Contribution.
+2. **Data Cleaning and Preparation**
+   - Clean each dataset for null values, duplicates, and formatting inconsistencies.
+   - Join the three tables as needed, such as using Order ID to match returns data with orders.
+   - Create derived fields like Total Profit, Profit Margin, and Sales Contribution.
 
-## KPI Calculation:
+3. **KPI Calculation**
+   - Calculate Total Sales, Total Profit, Total Quantity, Number of Orders, and Average Discount.
+   - Summarize these metrics in a KPI table to be used in the dashboard.
 
-Calculate Total Sales, Total Profit, Total Quantity, Number of Orders, and Average Discount.
-Summarize these metrics in a KPI table to be used in the dashboard.
-Data Visualization:
+4. **Data Visualization**
+   - Create various charts and graphs:
+     - **Bar Charts** for top and bottom subcategories.
+     - **Line Charts** for visualizing the Yearly Sales Trend.
+     - **Pie Charts** for Segment-wise Sales Share.
+     - **Geo Maps** for Sales by Country.
+   - Use filtering options to allow users to filter data by region, market, and customer segment.
 
-Create various charts and graphs:
-Bar Charts for top and bottom subcategories.
-Line Charts for visualizing the Yearly Sales Trend.
-Pie Charts for Segment-wise Sales Share.
-Geo Maps for Sales by Country.
-Use filtering options to allow users to filter data by region, market, and customer segment.
-Return Analysis:
+5. **Return Analysis**
+   - Visualize the number of returns across different markets and product categories.
+   - Provide insights into patterns and potential issues causing returns.
 
-Visualize the number of returns across different markets and product categories.
-Provide insights into patterns and potential issues causing returns.
-Deploy the Dashboard:
+6. **Deploy the Dashboard**
+   - Publish the dashboard to a web server (if using a tool like Tableau or Power BI) or deploy it using Python (e.g., Dash app on a cloud service).
+   - Share access with stakeholders by providing a link or embedding the dashboard on a web page.
 
-Publish the dashboard to a web server (if using a tool like Tableau or Power BI) or deploy it using Python (e.g., Dash app on a cloud service).
-Share access with stakeholders by providing a link or embedding the dashboard on a web page.
-Test and Iterate:
+7. **Test and Iterate**
+   - Test the dashboard for functionality and usability.
+   - Gather feedback from users and iterate to improve user experience and insights.
 
-Test the dashboard for functionality and usability.
-Gather feedback from users and iterate to improve user experience and insights.
 
 ## Conclusion
 This dynamic retail dashboard offers a comprehensive solution for analyzing retail data, providing valuable insights into sales, profitability, and customer behavior. By focusing on the key metrics and offering a user-friendly interface, the dashboard is an effective tool for retail managers to make data-driven decisions. Future enhancements like return analysis and market analysis will further strengthen its capabilities, making it an indispensable asset for retail businesses.
+
+
+
+![WhatsApp Image 2024-10-30 at 14 19 51_b3ea75bc](https://github.com/user-attachments/assets/177523ca-7220-4bd0-ab1a-9c299c706036)
+
