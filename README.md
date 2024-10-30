@@ -9,9 +9,13 @@ The primary goal of this project is to develop a comprehensive and dynamic dashb
 Retail businesses thrive on accurate data analysis and insights. The dynamic retail dashboard serves as a powerful tool for:
 
 Tracking KPIs: Monitor crucial metrics like total sales, total profit, order count, and profit margin.
+
 Understanding Sales Trends: Analyze sales trends over time, identify top-performing regions, and assess the effectiveness of different segments.
+
 Product Analysis: Evaluate which product categories and subcategories drive the most sales and profit.
+
 Customer Analysis: Identify top and bottom customers to tailor strategies and optimize engagement.
+
 Return Analysis: Understand return patterns across different markets and segments.
 
 ## Data Sources
